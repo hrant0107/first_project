@@ -54,22 +54,56 @@
 
 // console.log(!isChek || close);
 
-const numberOfFilms = +prompt("how many fils did you see?", "");
+// const numberOfFilms = +prompt("how many fils did you see?", "");
 
-const movieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
+// const movieDB = {
+//   count: numberOfFilms,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
 
-const queshionA = prompt("which film are you liked", ""),
-  queshionB = prompt("is good?", ""),
-  queshionC = prompt("which film are you liked", ""),
-  queshionD = prompt("is good?", "");
+// const queshionA = prompt("which film are you liked", ""),
+//   queshionB = prompt("is good?", ""),
+//   queshionC = prompt("which film are you liked", ""),
+//   queshionD = prompt("is good?", "");
 
-movieDB.movies[queshionA] = queshionB;
-movieDB.movies[queshionC] = queshionD;
+// movieDB.movies[queshionA] = queshionB;
+// movieDB.movies[queshionC] = queshionD;
 
-console.log(movieDB);
+// console.log(movieDB);
+
+// if (num < 49) {
+//   console.log("error");
+// } else if (num > 100) {
+//   console.log("lot");
+// } else {
+//   console.log("ok");
+// }
+// const num = 50;
+// num === 51 ? console.log('true') : console.log("false")
+
+// switch (num){
+//   case 45:
+//     console.log('false')
+//     break;
+//     case 50:
+//       console.log('true')
+//       break;
+//       default:
+//         console.log('noo today')
+//         break;
+// }
+
+let num = 50;
+
+// while (num < 56) {
+//   console.log(num);
+//   num = num + 2;
+// }
+
+do {
+  console.log(num);
+  num++;
+} while (num < 55);
