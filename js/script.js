@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 // const obj = {
 //   name: "armen",
 //   age: 18,
@@ -54,26 +54,6 @@
 
 // console.log(!isChek || close);
 
-// const numberOfFilms = +prompt("how many fils did you see?", "");
-
-// const movieDB = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: false,
-// };
-
-// const queshionA = prompt("which film are you liked", ""),
-//   queshionB = prompt("is good?", ""),
-//   queshionC = prompt("which film are you liked", ""),
-//   queshionD = prompt("is good?", "");
-
-// movieDB.movies[queshionA] = queshionB;
-// movieDB.movies[queshionC] = queshionD;
-
-// console.log(movieDB);
-
 // if (num < 49) {
 //   console.log("error");
 // } else if (num > 100) {
@@ -96,14 +76,118 @@
 //         break;
 // }
 
-let num = 50;
+// let num = 50;
 
 // while (num < 56) {
 //   console.log(num);
 //   num = num + 2;
 // }
 
-do {
-  console.log(num);
-  num++;
-} while (num < 55);
+// do {
+//   console.log(num);
+//   num++;
+// } while (num < 55);
+
+// for (i = 0; i < 8; i++) {
+//   if (i == 5) {
+//     continue;
+//   } else if(i ===7){
+//     break
+//   }
+//   console.log(i);
+// }
+
+const numberOfFilms = +prompt("how many fils did you see?", "");
+
+const movieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
+
+// for (i = 0; i < 2; i++) {
+//   const a = prompt("which film are you saw", ""),
+//     b = prompt("is good?", "");
+
+//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//     movieDB.movies[a] = b;
+//     console.log(true);
+//   } else {
+//     console.log("false");
+//     i--;
+//   }
+// }
+
+// if (movieDB.count < 10 && movieDB.count > 1) {
+//   console.log("duq qich filmer eq ditel");
+// } else if (movieDB.count >= 10 && movieDB.count < 30) {
+//   console.log("duq lav ditox eq");
+// } else if (movieDB.count > 30) {
+//   console.log("duq kinoman eq ");
+// } else {
+//   console.log("error");
+// }
+
+let i = 0;
+
+// while(i <2 ){
+//   i++;
+//   const a = prompt("which film are you saw", ""),
+//     b = prompt("is good?", "");
+
+//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//     movieDB.movies[a] = b;
+//     console.log(true);
+//   } else {
+//     console.log("false");
+//     i--;
+//   }
+// }
+// do {
+//   i++;
+//   const a = prompt("which film are you saw", ""),
+//     b = prompt("is good?", "");
+
+//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//     movieDB.movies[a] = b;
+//     console.log(true);
+//   } else {
+//     console.log("false");
+//     i--;
+//   }
+// } while (i < 2);
+
+console.log(movieDB);
+
+// const str = "tExt";
+// console.log(str.toLowerCase());
+// // console.log(str.toUpperCase());
+// console.log(str);
+
+// const fr = "many fruits";
+
+// console.log(fr.indexOf("m"));
+
+// const logg = " hello world";
+// console.log(logg.slice(-1));
+// console.log(logg.substring(6, 3));
+// console.log(logg.substr(5, 10));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = '12.2 px '
+// //  console.log(parseInt(test))
+//  console.log(parseFloat(test))
+
+// const calc = (a, b) => {
+//   return (a * b) / 100;
+// };
+
+// console.log(calc(100, 10)); // 100 * 10 / 100
+// console.log(calc(110, 10)); // 110 * 10 / 100
+// console.log(calc(120, 10));
+// console.log(calc(130, 10));
+// console.log(calc(140, 10));
