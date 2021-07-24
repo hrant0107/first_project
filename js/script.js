@@ -97,40 +97,7 @@
 //   console.log(i);
 // }
 
-const numberOfFilms = +prompt("how many fils did you see?", "");
-
-const movieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
-
-// for (i = 0; i < 2; i++) {
-//   const a = prompt("which film are you saw", ""),
-//     b = prompt("is good?", "");
-
-//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-//     movieDB.movies[a] = b;
-//     console.log(true);
-//   } else {
-//     console.log("false");
-//     i--;
-//   }
-// }
-
-// if (movieDB.count < 10 && movieDB.count > 1) {
-//   console.log("duq qich filmer eq ditel");
-// } else if (movieDB.count >= 10 && movieDB.count < 30) {
-//   console.log("duq lav ditox eq");
-// } else if (movieDB.count > 30) {
-//   console.log("duq kinoman eq ");
-// } else {
-//   console.log("error");
-// }
-
-let i = 0;
+// let i = 0;
 
 // while(i <2 ){
 //   i++;
@@ -159,7 +126,7 @@ let i = 0;
 //   }
 // } while (i < 2);
 
-console.log(movieDB);
+// console.log(movieDB);
 
 // const str = "tExt";
 // console.log(str.toLowerCase());
@@ -191,3 +158,90 @@ console.log(movieDB);
 // console.log(calc(120, 10));
 // console.log(calc(130, 10));
 // console.log(calc(140, 10));
+let numberOfFilms;
+
+const start = () => {
+  numberOfFilms = prompt("how many fils did you see?", "");
+
+  while (
+    numberOfFilms === "" ||
+    numberOfFilms === null ||
+    isNaN(+numberOfFilms)
+  ) {
+    numberOfFilms = prompt("how many fils did you see?", "");
+  }
+};
+
+start();
+
+const movieDB = {
+  count: +numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: true,
+};
+
+const rememberMyFilms = () => {
+  for (let i = 0; i < 2; i++) {
+    const a = prompt("which film are you saw", ""),
+      b = prompt("is good?", "");
+
+    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+      movieDB.movies[a] = b;
+      console.log(true);
+    } else {
+      console.log("false");
+      i--;
+    }
+  }
+};
+// rememberMyFilms();
+
+const detectPersonaLevel = () => {
+  if (movieDB.count < 10 && movieDB.count > 1) {
+    console.log("duq qich filmer eq ditel");
+  } else if (movieDB.count >= 10 && movieDB.count < 30) {
+    console.log("duq lav ditox eq");
+  } else if (movieDB.count > 30) {
+    console.log("duq kinoman eq ");
+  } else {
+    console.log("error");
+  }
+};
+
+// detectPersonaLevel();
+console.log(movieDB);
+
+const showMyDB = () => {
+  if (movieDB.privat === false) {
+    console.log(movieDB);
+  } else {
+    console.log("your DB is privat");
+  }
+};
+
+// const showMyDB = (hidden) => {
+//   if (!hidden) {
+//     console.log(movieDB);
+//   }
+// };
+
+// showMyDB(movieDB.privat);
+
+// const writeYourGenres = () => {
+//   for (let i = 0; i < 3; i++) {
+//     const answer = prompt("which your lovely genres", "");
+
+//     movieDB.genres[i] = answer;
+//   }
+// };
+
+const writeYourGenres = () => {
+  for (let i = 1; i <= 3; i++) {
+    movieDB.genres[i - 1] = prompt(`which your lovely genres ${i}`);
+  }
+};
+
+writeYourGenres();
+// showMyDB();
